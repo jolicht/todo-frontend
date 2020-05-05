@@ -21,7 +21,7 @@
             }
         },
         mounted() {
-            axios.get('http://localhost:8080')
+            axios.get('http://localhost:9080/api/time/current')
                 .then(response => (this.timeInfo = response.data));
         }
     }
